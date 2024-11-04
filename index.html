@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+        <script src="https://kit.fontawesome.com/b53bd91778.js" crossorigin="anonymous"></script>
+        <script type="module" type="text/javascript" src="main.js"></script>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+
+        <!--* ________________ NAVIGATION SECTION____________________ -->
+        <nav>
+            <h1 style="font-size: x-large;padding: 0.25rem 1rem ;">Portfolio</h1>
+            <ul class="nav-links">
+                <li id='home' class="active">Home</li>
+                <li id='games'>Games</li>
+                <li id='resume'>Resume</li>
+                <li id='about-me'>About me</li>
+                <!-- <li id='contact'>Contact</li> -->
+            </ul>
+            <div class="menuToggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!--! ________________ NAVIGATION SECTION____________________ -->
+        <!--* ________________ MAIN CONTAINER SECTION________________ -->
+        <div class="container">
+            <!--* ________________ HOME SECTION ________________ -->
+            <div class="home active">
+                <p>
+                    <span style="font-size: 22px;font-weight: bold;">Hey There,</span><br>
+                    I'm a game dev enthousiast with some experience under my belt when it comes to conceiving, designing
+                    and
+                    building Android and PC games from scratch.
+                    <br>
+                    <button onclick="document.getElementById('games').click();">Portfolio</button>
+                    <br>
+                    Up till now, I've mainly done it for fun and for improving my skills.
+                    But lately, I've decided it's time to accept work offers, either full-time
+                    employment or freelance jobs. I use
+                    <b>Unity and C#</b>.
+                    <br>
+                    <button onclick="document.getElementById('resume').click();">Resume</button>
+                    <br>
+                    If you are want to know more about me, you can
+                    <button onclick="document.getElementById('about-me').click();"
+                        style="margin-top: 0;margin-bottom: 0.85rem;">Click here</button>
+                    <br>
+                    If you'd like to get in touch, please do through: <b style="font-size:small;">example@gmail.com</b>
+                </p>
+                <img src="public/ez2.png" alt="" srcset="">
+            </div>
+            <!--! ________________ HOME SECTION ________________ -->
+            <!--* ________________ GAMES SECTION________________ -->
+            <div class="games ">
+
+                <!-- * Jumpy Slime -->
+                <div class="game">
+                    <div class="desc">
+                        <h2>Jumpy Slime [PC]<a target='_blank' rel="noopener noreferrer"
+                                href="https://github.com/RamesesXI/MyGames/tree/main/Jumpy%20Slime/Scripts"><i
+                                    class="fa-brands fa-github"></i></a><i onclick="downloadgame(1)"
+                                class="fa-solid fa-cloud-arrow-down"></i></h2>
+                        <hr>
+                        <p>
+                            Solve this multi-leveled puzzle by clearing all boxes before
+                            reaching the finish box.
+                        </p>
+                    </div>
+                    <div class="preview">
+                        <img src="public/jumpy-slime1.png" alt="">
+                        <img src="public/jumpy-slime2.png" alt="">
+                        <img src="public/jumpy-slime3.png" alt="">
+                    </div>
+                </div>
+
+                <!-- * Antichamber -->
+                <div class="game">
+                    <div class="desc">
+                        <h2>
+                            Antichamber [Android]<a target='_blank' rel="noopener noreferrer"
+                                href="https://github.com/RamesesXI/MyGames/tree/main/Antichamber/Scripts"><i
+                                    class="fa-brands fa-github"></i></a><i onclick="downloadgame(2)"
+                                class="fa-solid fa-cloud-arrow-down"></i>
+                        </h2>
+                        <hr>
+                        <p>
+                            Solve this 3D puzzle by escaping a non-Euclidian, Escher-like
+                            building.
+                        </p>
+                    </div>
+                    <div class="preview">
+                        <img src="public/maze1.jpg" alt="">
+                        <img src="public/maze2.jpg" alt="">
+                        <img src="public/maze3.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- * Hack the Safe [Android] -->
+                <div class="game">
+                    <div class="desc">
+                        <h2>Hack the Safe [Android]<a target='_blank' rel="noopener noreferrer"
+                                href="https://github.com/RamesesXI/MyGames/tree/main/Hack%20the%20Safe/Scripts"><i
+                                    class="fa-brands fa-github"></i></a><i onclick="downloadgame(3)"
+                                class="fa-solid fa-cloud-arrow-down"></i></h2>
+                        <hr>
+                        <p>
+                            Figure out the number lock for cracking the safe by getting
+                            hints for each attempt.
+                        </p>
+                    </div>
+                    <div class="preview">
+                        <img src="public/crackpin1.jpg" alt="">
+                        <img src="public/crackpin2.jpg" alt="">
+                        <img src="public/crackpin3.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- * Guess the Flag -->
+                <div class="game">
+                    <div class="desc">
+                        <h2>Guess the Flag [Android]<a target='_blank' rel="noopener noreferrer"
+                                href="https://github.com/RamesesXI/MyGames/tree/main/Guess%20the%20Flag/Scripts"><i
+                                    class="fa-brands fa-github"></i></a><i onclick="downloadgame(4)"
+                                class="fa-solid fa-cloud-arrow-down"></i></h2>
+                        <hr>
+                        <p>
+                            Test your global knowledge by guessing country names from
+                            their flags.
+                        </p>
+                    </div>
+                    <div class="preview flags">
+                        <img src="public/guessflag1.jpg" alt="">
+                        <img src="public/guessflag2.jpg" alt="">
+                        <img src="public/guessflag3.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- * Brawler -->
+                <div class="game">
+                    <div class="desc">
+                        <h2>Brawler [PC] (Prototype)<a target='_blank' rel="noopener noreferrer"
+                                href="https://github.com/RamesesXI/MyGames/tree/main/Brawler/Scripts"><i
+                                    class="fa-brands fa-github"></i></a><i onclick="downloadgame(5)"
+                                class="fa-solid fa-cloud-arrow-down"></i>
+                        </h2>
+                        <hr>
+                        <p>
+                            Control 3 unique characters, each with unique abilities such as
+                            making portals, swinging from grappling hooks, and rewinding
+                            time.
+                        </p>
+                    </div>
+                    <div class="preview">
+                        <img src="public/Brawler1.png" alt="" srcset="">
+                        <img src="public/Brawler2.png" alt="" srcset="">
+                        <img src="public/Brawler3.png" alt="" srcset="">
+                    </div>
+                </div>
+
+                <!-- <div class="game">
+          <div class="desc">
+            <h2>Shapes <a href="github.com"><i class="fa-brands fa-github"></i></a></h2>
+            <hr>
+            <p>
+              A prototype of a real-time strategy game where you select and
+              control different unit types
+            </p>
+          </div>
+          <div class="preview">
+            <img src="public/shapes1.jpg" alt="">
+            <img src="public/shapes2.jpg" alt="">
+            <img src="public/shapes3.jpg" alt="">
+          </div>
+        </div> -->
+
+            </div>
+            <!--! ________________ GAMES SECTION________________ -->
+            <!--* ________________ RESUME SECTION ________________ -->
+            <div class="resume ">
+                <button> <a style="text-decoration: none;color: white;" href="public/CV_Example.png" download>Download
+                        <i class="fa-solid fa-cloud-arrow-down"></i></a></button>
+                <img src="public/CV_Example.png" alt="">
+            </div>
+            <!--! ________________ RESUME SECTION ________________ -->
+            <!--* ________________ ABOUT-ME SECTION ________________ -->
+            <div class="about-me">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem fuga aperiam esse deleniti laudantium
+                dolores nisi rerum, non consequatur, eius ducimus quos, pariatur repudiandae nobis? Inventore molestiae
+                repudiandae voluptatum magnam incidunt optio quasi doloribus laborum saepe quas quos voluptate alias sit
+                officiis molestias dolor debitis architecto cum, ad est a. Sed dolorem eveniet distinctio placeat totam
+                vitae maxime, quis labore assumenda voluptatum molestiae dolore voluptatibus officia vel deleniti sint
+                necessitatibus saepe nostrum similique iusto. Optio reiciendis sint nesciunt itaque corporis dolorem
+                magnam eum ratione, aspernatur tempore inventore modi asperiores commodi necessitatibus repellendus
+                ipsam amet porro numquam tenetur sed. Ex, natus.
+
+                 
+                <h2>
+                    School and Game Dev:
+
+                </h2>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam et laborum nesciunt commodi aliquam
+                deleniti, velit consectetur, incidunt facere hic, eos delectus placeat officia vitae eaque optio eveniet
+                atque libero cupiditate voluptas quaerat. Vitae ratione iste totam tempore nulla quaerat corrupti
+                aperiam. Architecto accusamus ullam sed aliquid quibusdam odio distinctio, culpa nam, dicta eaque, quasi
+                libero laborum accusantium officiis reiciendis recusandae vel eos nisi soluta illo. Tempora odit sit,
+                labore officiis illum nemo quisquam totam assumenda et. Consectetur provident enim consequuntur totam
+                sint itaque et quam unde quibusdam quisquam impedit numquam similique quas debitis dolores facilis,
+                aspernatur dolore tenetur, a, ipsam optio. Aliquid at quasi assumenda necessitatibus, vel quos minima
+                alias porro quis et. Placeat, ipsa fugit in blanditiis veniam dolorum culpa, distinctio consequatur
+                facilis itaque magni perspiciatis? Quam, enim molestiae. Repellendus quam reprehenderit natus neque
+                magnam cum enim. Architecto soluta asperiores quibusdam quia enim, aliquid tempore ullam! Reprehenderit
+                voluptatem explicabo veniam quisquam molestias adipisci nihil dolorum eos illo quis cum repudiandae,
+                fuga, alias molestiae necessitatibus illum consequuntur aperiam sequi laboriosam eligendi natus neque!
+                Consequuntur blanditiis tempore molestiae animi ab mollitia hic cupiditate voluptates ad nihil. Optio
+                temporibus corporis error! Provident odit vel non perferendis debitis soluta quos, libero ullam.
+                 
+                <h2>
+
+
+            </div>
+            <!--! ________________ ABOUT-ME SECTION ________________ -->
+
+
+        </div>
+        <!--! ________________ MAIN CONTAINER SECTION________________ -->
+        <!--* ________________ MODAL MECHANISM ______________________ -->
+        <div class="modal-bg">
+            <div class="modal">
+                <img class="modalImage" alt="" srcset="">
+                <span class="leftA"><i class="fa-solid fa-arrow-left"></i></span>
+                <span class="rightA"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="clsB"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <!--! ________________ MODAL MECHANISM ______________________ -->
+
+    </body>
+
+</html>
